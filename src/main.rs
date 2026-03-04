@@ -25,7 +25,54 @@ fn main() {
           
     }
     
+    let estados = ["0137", "247", "7", "8", "68", "58"];
 
+let mut estado_actual: usize = 0; // empieza en 0137
+
+
+fn transicion(estado_actual: usize, simbolo: char) -> usize {
+
+    if estado_actual == 0 && simbolo == 'a' {
+        return 1;
+    }
+
+    if estado_actual == 0 && simbolo == 'b' {
+        return 3;
+    }
+
+    if estado_actual == 1 && simbolo == 'a' {
+        return 2;
+    }
+
+    if estado_actual == 1 && simbolo == 'b' {
+        return 5;
+    }
+
+    if estado_actual == 2 && simbolo == 'a' {
+        return 2;
+    }
+
+    if estado_actual == 2 && simbolo == 'b' {
+        return 3;
+    }
+
+   
+    if estado_actual == 3 && simbolo == 'b' {
+        return 3;
+    }
+ 
+    if estado_actual == 4 && simbolo == 'b' {
+        return 3;
+
+    }
+     if estado_actual == 5 && simbolo == 'b' {
+        return 4;
+        
+    }
+
+
+    return estado_actual;
+}
 
 
     
