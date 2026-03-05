@@ -11,3 +11,7 @@ It is very simple: make sure you are inside the project folder and run:
 
 # Brief Explanation
 This program reads a string from the terminal and checks whether it is accepted by the lexical analyzer automaton using the alphabet `{a, b}`.
+
+# Video Link
+https://drive.google.com/file/d/19GNPvij0JcjbSRnfYdxHxcIrrHZ-5nX2/view?usp=sharing
+
